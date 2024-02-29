@@ -2,21 +2,29 @@
   <div id="app">
     <NavBar />
     <AlertFeedback />
+    <Donation />
     <router-view />
     <footer>
-      Powered by <a target="_blank" href="https://kiwix.org">Kiwix</a> and <a target="_blank" href="https://webrecorder.net">Webrecorder</a>, thanks to a <a target="_blank" href="https://www.mozilla.org/moss/">Mozilla Open-Source Support</a> Award <b-icon icon="heart-fill" style="color: rgb(234, 74, 170);" />
+      Powered by <a target="_blank" href="https://kiwix.org">Kiwix</a> and
+      <a target="_blank" href="https://webrecorder.net">Webrecorder</a>, thanks
+      to a
+      <a target="_blank" href="https://www.mozilla.org/moss/"
+        >Mozilla Open-Source Support</a
+      >
+      Award <b-icon icon="heart-fill" style="color: rgb(234, 74, 170)" />
     </footer>
   </div>
 </template>
 
 <script>
-    import NavBar from './components/NavBar.vue'
-    import AlertFeedback from './components/AlertFeedback.vue'
+import NavBar from "./components/NavBar.vue";
+import AlertFeedback from "./components/AlertFeedback.vue";
+import Donation from "./components/Donation.vue";
 
-    export default {
-      name: 'app',
-      components: {NavBar, AlertFeedback},
-    };
+export default {
+  name: "app",
+  components: { NavBar, AlertFeedback, Donation },
+};
 </script>
 
 <style type="text/css" scoped>
